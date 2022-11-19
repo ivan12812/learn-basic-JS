@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe data object</title>
+  </head>
+  <body>
+    <script>
+      const orang = {
+        "Nama Lengkap": "ivan Apriana",
+        alamat: "karawang",
+        umur: 18,
+      };
+
+      //menambah atau mengubah
+      //   orang["nama"] = "ivan apriana";
+      //   orang["pacar"] = "rika rahmawati";
+      //   orang["no hp"] = 0813146240973;
+
+      console.info(`nama : ${orang["Nama Lengkap"]}`);
+      console.info(`alamat : ${orang.alamat}`);
+      console.info(`umur : ${orang.umur}`);
+
+      console.table(orang);
+
+      delete orang["no hp"];
+
+      console.table(orang);
+    </script>
+  </body>
+</html>

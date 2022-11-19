@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi String dan Number</title>
+  </head>
+  <body>
+    <script>
+      const value1 = parseInt("1");
+      const value2 = 1;
+      const sum = value1 + value2;
+
+      document.writeln(`<p>${sum}</p>`);
+      document.writeln(`<p>${parseInt("1.1")}</p>`); // paseInt pecahannya akan di hiraukan
+      document.writeln(`<p>${parseFloat("1.1")}</p>`); // jadi bilangan pecahan
+      document.writeln(`<p>${Number("1.1")}</p>`); // Number bisa Int bila Float
+
+      //konversi string
+      const a = 1;
+      const b = 1;
+      const total = a.toString() + b.toString();
+      document.writeln(`<p>${total}</p>`);
+
+      //NaN
+      document.writeln(`<p>${parseInt("a")}</p>`);
+      document.writeln(`<p>${parseFloat("1.1eko")}</p>`);
+
+      document.writeln(`<p>${Number("a")}</p>`);
+      document.writeln(`<p>${Number("1.1eko")}</p>`);
+
+      document.writeln("<hr>");
+
+      //NaN kalo dikonverisi kepada data apapun hasilnya tetap NaN. contoh :
+      const value3 = Number("salah");
+      const value4 = 100;
+      const sum2 = value3 + value4;
+
+      document.writeln(`<p>${sum2}<p>`);
+
+      document.writeln("<hr>");
+
+      //function isNaN
+      document.writeln(`<p>${isNaN(sum2)}<p>`);
+      document.writeln(`<p>${isNaN(value4)}<p>`);
+      document.writeln(`<p>${isNaN(NaN)}<p>`);
+    </script>
+  </body>
+</html>

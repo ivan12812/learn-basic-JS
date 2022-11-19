@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator In</title>
+  </head>
+  <body>
+    <script>
+      const orang = {
+        firstName: "ivan",
+        lastName: "Apriana",
+      };
+
+      if ("firstName" in orang) {
+        alert(`hello ${orang.firstName}`);
+      } else {
+        alert("hello");
+      }
+
+      const mhs = {
+        firstName: "Ivan",
+        middleName: undefined,
+        lastName: "rika",
+      };
+
+      if ("middleName" in mhs) {
+        alert(`hello ${mhs.middleName}`);
+      } else {
+        alert("hello");
+      }
+
+      const names = [null, "rika", null];
+      const result = 0 in names;
+      document.writeln(`<p>${result}</p>`);
+    </script>
+  </body>
+</html>

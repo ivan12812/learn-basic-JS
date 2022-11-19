@@ -1,0 +1,218 @@
+introduction Java Script by eko kurniawan kanedi (Programer Zaman Nam)
+
+SEJARAH
+- jasascrip di buat di tahun 1995, pembuat brandan eich programmer di perusahaan netscape
+- JAVASCRIPT dibuat agar website lebih i nteraktif
+- javascript bisa dijalankan di server dengan node js
+
+TIPE DATA NUMBER
+- JavaScript hanya mendukung satu tipe data number. Tipe data number di JS bisa berupa bilangan bulat atau desimal
+- bilangan bulat dan desimal/pecahan dii JS jadi bilangan number.
+
+TIPE DATA BOOLEAN
+- yaitu tipe data yang berisikan data kebenaran atau hanya ada dua data, benar atau salah
+- benar(true) dan salah(false)
+- tipe data boolean banyak di gunakan di berbagai fiture pemrograman
+
+TIPE DATA STRING
+- string artinya text bisa kosong bisa banyak karakter
+- tanda per=tik satu (') atau (") untuk membua string
+- menambahkan string menggunaka oprator + (plush)
+Escape sequence pada string
+- yaitu karakter khusus
+- \n = enter
+- \t = tab
+- \' = kutip satu
+- \" = ktip dua
+- \\ = slash
+
+VARIABLE
+- yaitu tempat untuk menyimpan data
+- var, let, const
+- const tida bisa di ubah
+- const = constanta
+cara mengubah variable :
+- nama variable = nilai value
+
+OPERATOR ARITMATIKA
+-JavaScript mendukung banyak operator matematika untuk tipe data number, seprti:
+	1. Operator Aritmatika
+	2. Operator Augmented Assigment
+	3. Operator Unary
+	4. Operator perbandingan
+	5. Dan lain-lain
+1.Operator Aritmatika
+ + = pertambahan
+ - = pengurangan
+ * = perkalian
+ ** = pangkat atau exponensial
+ / = pembagian
+ % = sisa bagi atau modulus
+2. Operator Ausegment Assigment
+- yaitu oprator penugasan tambahan
+oprator aritmatika -> samadengan
+3. Operator Unary
+-yaitu oprator yang biasanya cukup memerlukan satu data
++ = menandakan nilai positif
+- = nilai negatif
+++ = menaikan 1 angka
+-- = menurunkan 1 angka
+4. Operator Perbandingan
+ - yaitu oprator untuk membandingkan dua buah data yang menghasilkan nilai boolean (benar atau salah)
+ - benar = true
+ - salah = false
+ beberapa oprator perbandingan :
+ > = lebih dari
+ < = kurang dari
+ >= = lebih dari samadengan
+ <= = kurang dari samadengan
+ == = sama dengan
+ === = sama dengan sama type
+ != = tidak sama dengan
+ !== = tidak sama dengan sama type
+5. Operator Logika
+ - yaitu oprator untuk dua buah data boolean dan hasilnya boolean lagi
+ macam2 operator logika
+ 1. && = dan
+ 2. || = atau
+ 3. ! = kebalikan
+1. Operator &&
+ true && true = true
+ true && false = false
+ false && true = false
+ false && false = true
+2. Operator ||
+ true || true = true
+ true || false = true
+ false || true = true
+ false || false = false
+3. Operator !
+ digunakan untuk satu data
+ ! true dibalikan nilaina jadi false
+ ! flse dibalikan nilainya jadi true
+
+CONSOLE
+-fitur untuk melakukan logging
+ logging = untuk menampilkan info dari aplikasi yang sedang berjalan tanpa mengganggu alur kerja dan interaksi
+macam2 console :
+1. console method
+ - console.info()/console.log() = memberitahu informasi
+ - console.warn() = memberitahu info peringatan
+ - console.error() = memberitau informasi error
+ - console.table() = memberitahu info dalam bentuk table
+
+STRING TAMPLATE
+- bisa mengambil data variable, atau bahkan melakukan operasi matematika
+- cara pembuatan stringnya harus menggunakan ` (backtick)
+
+KONVERSI STRING DAN NUMBER
+- saat membuat aplikasi, 
+kadang kita input dari pengguna selalu dalam bentuk string, sedangkan kita mengelolanya dalann bentuk number, 
+maka sangat disarankan melakukan konversi tipe data
+caranya :
+parseInt(string) = mengkonversi dari string ke number (bilangan bulat)
+parseFloat(string) = mengkonversi dari string ke number (bilangan pecahan)
+Number(string) = mengkonversi dari tring ke number (bilangan bulat atau pecahan)
+number.toString() = mengkonversi dari number ke string
+
+NaN (Not a Number)
+ didalam namber ada namber unik namanya NaN
+NaN adalah kejadian kalau mengkonversi data yang tidak valid
+
+isNaN() Function
+untuk pengecekan number hasilnya berupa data boolean
+true jika NaN
+false jika bukan NaN
+
+TIPE DATA ARRAY
+- adalah tipe data yanng berisikan kumpulan data
+- memiliki sifat dinamis, data bisa bertambah dengan sendirinya saat kita memasukan data ke dalam array
+Cara Kerja Array
+1. Setiap data array akan disimpan dalan posisi berurutan, urutan pertama dimulai dari 0
+2. Setiap menambahkan data ke array, otomatis data akan disimpan di urutan terakhir
+3. Urutan di array disebut index
+Cara menambah data array
+- namaVariable.push();
+Operasi di Array
+1. array.push(value) = menambah data ke array
+2. array.length = Untuk mendapatkan panjang array
+3. array[index] = Mendapatkan data di posisi index
+4. array[index] = value (yaitu untuk menambah data di posisi index)
+5. delete array[index] = untuk menghapus data di posisi index, namun index tidak bergeser
+Penting diingat saat menggunakan tipe data array
+1. data di dalam array ada batasnya harus data apa
+2. jadi kita biksa memasukan data apapun ke dalam array
+3. bahkan bisa memasukan array ke dalam array jika mau
+
+TIPE DATA OBJECT
+- data object adalah tipe data yang mirip dengan tipe data array
+- yang membedakan adalah index pada tipe data object bisa menggunakan string
+- index di object biasanya disebut attributes atau properties, bukan index
+
+IF EXPRESSION
+- if adalah salah satu kunci dalam percabangan
+- percabangan = kita bisa mengeksekusi kode program tertentu ketika suatu kondisi terpenuhi
+- hampir di semua bahasa pemorograman mendukung if expression
+Else exrpression 
+- blok if akan dieksekusi ketika kondisi if bernilai true
+- kadang kita ingin melakukan eksekusi program tertentu jika kondisi if bernilai false
+- hali ini bisa dilakukan menggunakan else expression
+Else if
+- kadang dalam if, kita butuh membuat beberapa kondisi
+- kasus seperti ini, di javascript bisa menggunakan Else if expression
+
+
+POP UP
+ alert, prompt dan confirm adalah fitur dari javascript
+	1. Alert
+	 digunakan untuk memberi peringatan berupa popup text di browser
+	2. Prompt
+	 digunakan untuk mmeminta input string dari user dalam bentuk pop up input text
+	3. sedangkan confirm digunakan untuk meminta boolean dari pengguna browser dalam bentuk popup input pilihan
+
+
+UNDEFINED
+ - adalah sebuah kata kunci di javascript, merupakan tipe data
+ - sebuah variable yang belum memiliki nilai, maka artinya variable tersebut merupakan tipe undefined
+ - undefined itu berbeda dengan null di bahasa pemrograman javascript
+
+
+NULL
+ - merupakan representasi dari data kosong
+ - perbedaan null dan uundefined yaitu null berarti variable sudah di tambahkan valuenya, hanya saja bale nya null
+ - sedangkan undefined adalah variable belum di tambahkan value nya
+
+
+SWITCH EXPRESSION
+ - Adalah statement percabangan yang sama dengan if, namun lebih sederhana cara pembuatannya
+ - kondisi di switch statement hanya untuk perbandingan sama dengan
+
+
+OPERATOR TYPEOF
+ - merupakan operator yang bisa kita gunakann untuk melihat tipe data sebuah value atau variable
+ - typeof diginakan untuk mengecek tipe data sebuah value atau variable menggunakan oerator typrof
+ - hasil dari operator typrof adalah string tipe datanya
+
+
+OPOERATOR IN
+ - adalah operator yang bisa kita lakukan untuk mengecek apakah sebuah property ada di dalm object atau tidak
+ - Jika property tersebuat ada di object maka hasilnya true, sedangkan jika tidak maka hasilnya false
+ - tidak hanya di object, In juga bisa digunakan untuk mengecek index di array
+Penting diingat
+ - in oprator hanya mengecek ada atau tidak
+ - walaupun nilai property atau index nya undefined atau null, maka tetap akan dianggap ada
+
+
+OPERATOR TERNARY
+ - Adalah bentuk sederhana dari if statement
+ - terdiri dari kondisi yang di evaluasi, jika menghasilkan true maka nilai pertama diambil, jika false, maka nilai keduan yang diambil
+
+
+NULLISH COALESCING OPERATOR
+ - nullish value adalah null dan undefined
+ - nullish coalescing operator (??) adalah operator mirip dengan ternary operator, bedanya adalah pada posisi, jika bernilai null atau undefined, value default nya di ammbil
+
+
+OPTIONAL CHAINING
+ - atau operator (?) merupakan oprerator yang dignakan untuk mengamankan ketika ingin mengakses property sebuah object dari data nullish
+ - jika kita mencoba mengakses property dari sebuah object dari data nullish tanpa menggunakan optional chaining operator, maka akan terjadi error

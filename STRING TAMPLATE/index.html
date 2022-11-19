@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // stirng tampate
+
+      // mengambil data variable untuk di masukan ke variable lain
+      const name = "rika rahmawati apriana";
+      const firstName = "rika";
+      const midleName = "rahmawati";
+      const lastName = "apriana";
+      const template = `Name : ${firstName}  ${lastName}`;
+
+      document.writeln(template);
+
+      document.writeln("</br>");
+
+      // selain variable. expresen juga bisa. ini contohnya:
+      const nilai = 50;
+      const tamplate2 = `Name : ${name}, Lulus: ${nilai > 70}`;
+      document.writeln(tamplate2);
+
+      document.writeln("</br>");
+      //multiline string
+      const multiline = `saya ivan apriana, 
+pacarnya rika rahmawati,
+i love u rika,
+muachhh`;
+
+      document.writeln("<pre>");
+      document.writeln(multiline);
+      document.writeln("</pre>");
+    </script>
+  </body>
+</html>

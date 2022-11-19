@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator perbandingan</title>
+  </head>
+  <body>
+    <script>
+      // membandingkan isi data
+      let result = 5 == "5"; //true
+      document.writeln("<p>" + "1. " + result + "</p>");
+
+      //   membandingkan type data
+      result = 5 === "5"; //false
+      document.writeln("<p>" + "2. " + result + "</p>");
+
+      // 5 lebih dari 10
+      result = 5 > 10; //false
+      document.writeln("<p>" + "3. " + result + "</p>");
+
+      // 5 kurang dari 10
+      result = 5 < 10; //true
+      document.writeln("<p>" + "4. " + result + "</p>");
+
+      // 5 lebih dri sama dengan 5
+      result = 5 >= 5; //true
+      document.writeln("<p>" + "5. " + result + "</p>");
+
+      // 5 kurang dari sama dengan 10
+      result = 5 <= 10; //true
+      document.writeln("<p>" + "6. " + result + "</p>");
+
+      // 5 tidak sama dengan 5
+      result = 5 != 5; //false
+      document.writeln("<p>" + "7. " + result + "</p>");
+
+      // number 5 tidak sama dengan string 5
+      result = 5 !== "5"; //true
+      document.writeln("<p>" + "8. " + result + "</p>");
+    </script>
+  </body>
+</html>
