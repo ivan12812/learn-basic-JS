@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator logika di Non boolean</title>
+  </head>
+  <body>
+    <script>
+      // Operator OR ||
+      console.log("Hello" || ""); //Hello
+      console.log("" || []); //[]
+      console.log("0" || "NOL"); //string 0
+      console.log(0 || "NOL"); //NOL
+      console.log(null || "NULL"); // string NULL
+      console.log(undefined || "UNDEFINED"); // string UNDEFINED
+      console.log(0 || false); // yang diambil false terakhir --> false
+
+      // contoh penggunaan
+      const person = {
+        firstName: "Ivan",
+        lastName: "Apriana",
+      };
+
+      const name = person.firstName || person.lastName;
+      console.log(name);
+
+      // Operaor DN &&
+      console.log("HELLO" && ""); // mengambil falsy --> string kosong
+      console.log("" && []); //array bernilai truthy maka yang diambil --> string kosong
+      console.log("0" && "NOL"); // jika keduanya truth maka mengambil yang terakhir --> "NOL"
+      console.log(0 && "NULL");
+      console.log(null && "NULL");
+      console.log(undefined && "UNDEFINED");
+      console.log("undefined" && "null");
+    </script>
+  </body>
+</html>

@@ -216,3 +216,54 @@ NULLISH COALESCING OPERATOR
 OPTIONAL CHAINING
  - atau operator (?) merupakan oprerator yang dignakan untuk mengamankan ketika ingin mengakses property sebuah object dari data nullish
  - jika kita mencoba mengakses property dari sebuah object dari data nullish tanpa menggunakan optional chaining operator, maka akan terjadi error
+
+
+FALSY
+ - adalah value yang ketika dalam kontek boolean, dia dianggap false.
+ - di JS, kondisi itu tidak hanya boolean, tapi di luar boolean pun bisa, namun kita harus tahu berapa data yang dianggap false
+
+ Data Falsy
+ false --> Boolean false
+ 0, -0 --> Number 0 dan -0 dianggap false
+ "", '', `` --> Semua string kosong dianggap false
+ null --> null dianggap false
+ undefine --> dianggap false
+ NaN --> Not a Number dianggap false
+
+TRUTHY
+- kebalikan dari falsy, dimana datanya dianggap bernilai true
+- Untuk mengetahui data true, yaitu data yang bukan bernilai falsy 
+
+
+OPERATOR LOGIKA DI NON BOOLEAN
+- JS bisa menggunakan operator logika AND dan OR untuk tipe data non boolean
+
+Operator OR (||) di Non Boolean
+- Operator logika OR (||), membaca dari kiri ke kekanan
+- Operator ini akan mengambil nilai pertama yang TRUTHY
+- Jika tidak ada satupuun yang bernilai truthy, maka yang terakhir yang akan diambil
+
+Operator AND (&&) di Non Boolean
+- Operator logika AND (||), membaca dari kiri ke kanan.
+- Operator ini akan menga,bil nilai pertama yang falsy
+- Jika ada satupun yang bernilai falsy, maka yang terakhir akan diambil
+
+
+FOR LOOP
+ - For adalah salah satu kata kunci yang bisa digunakan untuk melakukan perulangan
+ - blok kode yang terdapat di dalam for akan selalu diulangi selama kondisi for terpenuhi
+
+ Sintak perulangan For
+ for(init statement; kondisi; post statement) {
+	//block perulangan
+ }
+  
+  - init statement akan dieksekusi hanya sekali si awal sebelum perulangan
+  - kondisi akan dilakukan pengecekan dalam setiap perulangan, jika true perulangan akan di lakukan, jika false perulangan akan berhenti
+  - Post statement akan dieksekusi setiap kali diakhir perulangan\
+  - Init statement, kondisi dan post statement tidak wajib diisi, kebarti kondisi selalu berniali true
+
+
+  WHILE LOOP
+   	- adalah versi perulangan yang lebih sederhana dibanding for loop
+	- di while loop, hanya terdapat kondisi perulangan, tanpa ada init statement dan post statement 
