@@ -264,6 +264,72 @@ FOR LOOP
   - Init statement, kondisi dan post statement tidak wajib diisi, kebarti kondisi selalu berniali true
 
 
-  WHILE LOOP
+WHILE LOOP
    	- adalah versi perulangan yang lebih sederhana dibanding for loop
 	- di while loop, hanya terdapat kondisi perulangan, tanpa ada init statement dan post statement 
+
+
+DO WHILE LOOP
+	- do wwhile loop mirip dengan while loop
+	- perbedaannya hanya pada pengecekan kondisi
+	- pengecekan kondisi di while loop dilakukan diawal sebelum perulangan dilakukan, sedangkan do do while loop di lakukan setelah perulangan
+	- olehkarna itu dalam do while loop, minimmal pasti sekali perulangan dilakukan walaupun kondisi tidak bernilai true
+
+
+BREAK & CONTINUE
+	 - pada switch statement kita sudah mengenal kata kunci break, yaitu untuk menghentikan case dalam switch
+	 - sama dengan pada perulangan, break juga digunakan untuk menghentikan seluruh perulangan.
+	 - Namun berbeda dengan continue, continue digunakan untuk menghentikan perulangan saat ini, lalu melanjutkan ke perulangan selanjutnya.
+
+
+LABEL
+	- fitur label merupakan penanda yang bisa digunakan dengan kata kunci break dan continue
+	- secara default saat kita melakukan break atau continue, dia akan melakukan terhadap perulangan dimana kode break dan continue itu digunakan
+	- dengan menggunakan label, kita bisa melakukan break dan continue terhadap perulangan yang kita inginkan, asal pada perulangannya kita gunakan label
+	- untuk membuat label, kita bisa gunakan nama label lalu diikuti dengan : (titik dua)
+
+
+FOR IN
+	- For in mrupakan perulangan for yang digunakan untuk mengiterasi/ngecheck seluruh data property di objek atau index di array
+	- Walaupun for in bisa digunakan untuk array, namun tidak direkomendasikan untuk array, karna biasanya kita jarang sekali butuh data nomer index untuk array, kita bisa menggunakan For Of (yang dibahas setelah ini)
+
+
+FOR OF
+	- Jika for in digunakan untuk melakukan iterasi/mengecheck property atau index, berbeda dengan for of, ini digunakan untuk melakukan iterasi terhadap isi value dari iterable object, seperti array, string dan lain-lain
+	- for of tidak bisa digunakan untuk melakukan itrasi dari data di object, karna object bukanlah iterable.
+
+
+WITH STATEMENT 
+	- With statement merupakan fitur yang digunakan untuk menurunkan sebuah scope data
+	- Dengan menggunakan with statement, kita bisa menggunakan property dalam sebuah data tanpa harus menyebut dirinya. biasanya digunakan untuk mengakses property sebuah objek 
+
+	with statement tidak si rekomendasikan 
+	- walaupun  fiture eith statement ini sangat menarik
+	- namun kebanyakan orang tidak merekomendasikan penggunaan with statement
+	- hal ini dikarnakan with statement kadang membuat sebuah kode menjadi ambigu
+
+
+FUNCTION 
+	- Function adalah blok kode program yang akan berjalan saat kita panggil
+	- Sebelum kita mnggunakan function writln() untuk menampilkan tuliasan di html
+	- Untuk membuat function, kita bisas menggunakan kata kunci function, lalu diikuti dengan nama functionn, kurung () dan diakhiri dengan blok kurung {}
+	- Kita bisa memanggil function dengan menggunakann nama function laluu diikuti dengan kurung ()
+	- Di bahasa pemograman lain, function juga disebut dengan method
+
+
+FUNCTION PARAMETER
+	- Kita bisa mengirim informasi ke function yang ingin kita panggil
+	- Untuk melakukan hal tersebut, kita perlu menambahkan parameter atau argument di function yang ssudah kita buat
+	- Parameter ditempatkan didalam kurung () di deklarasi method
+	- Parameter bisa lebih dari satu, jika lebih dari satu, harus dipisah menggunakan tanda koma
+
+
+FUNCTION RETURN VALUE 
+	- Secara defaul, function itu tidak menghasilkan value apapun, namun jika kita ingin, kita isa membuat sebuah function mengembalikan value
+	- Agar function bisa menghasilkan value, untuk menghasilkan nilai tersebut, kita bisa menggunakan kata kunci return didalm functionnya
+	- Dan di dalam block function, untuk menghasilkan nilai tersebut, kita harus menggunakan kata kunci return, lalu diikuti dengan data yang ingin kita hasilkan
+	- function hanya bisa mngembalikan satu data, jika kita ingin mengembalikan beberapa data sekaligus, kita bisa menggunakan array sebagai return value nya
+
+	Menghentikan eksekusi dengan return
+	- saat kita menggunakan kata kunci return, maka kode setelah return tersebut tidak akan di eksekusi
+	- kita bisa menggunakan return untuk menghentikan eksekusi sebuah function 
