@@ -333,3 +333,64 @@ FUNCTION RETURN VALUE
 	Menghentikan eksekusi dengan return
 	- saat kita menggunakan kata kunci return, maka kode setelah return tersebut tidak akan di eksekusi
 	- kita bisa menggunakan return untuk menghentikan eksekusi sebuah function 
+
+
+OPTIONAL PARAMETER
+	- Secara default, parameter di function itu optional
+	- Artinya kita tidak wajib mengisi valuenya ketika memanggil function
+	- Jika tidak ada value yang kita kirim ke parameter ketika meemanggil function, maka secara otomais parameter tersebut bernilai undefined
+
+
+DEFAULT PARAMETER
+	- Sekarang kita tahu bahwa parameter itu optional, artinya kita bisa tidak memberi value terhadap perameter
+	- Parameter juga bisa kita beri default, artinya jika ketika kita tidak mengirim data ke parameter atau kita mengirim data unfined, maka secara otomatis parameter akan diisi oleh dafault value
+
+
+REST PARAMETER
+	- Rest Parameter adalah fitur dimana kita bisa mengirim data sebanyak-banyaknya pada satu parameter, dan secara otomatis akan dikonversi menjadi array
+	- Untuk membuat Rest parameter, ada ketentuannya
+	- Reat parameter hanya boleh ada satu fuunction, tidak boleh lebih dari satu
+	- Rest parameter hanya boleh berada diposisi paling akhir, tidak boleh didepan atau ditengah, kecuali memang cuma ada satu parameter
+	- di bahassa pemograman lain, ada juga yang bilang ini adalah variabl argument
+
+	Spread syntax
+	- Kadang kita terlanjur memiliki data berupa array
+	- Tapi untungnya kita juga bisa mengirim array ke rest parameter
+	- Kita bisa guunakan ...(titik tiga kali)
+	- fiture ini dinamakan Spread Syntax
+
+	Argument object
+	- Sebelum ada fitur rest parameter, di JS sudah ada fitur yang bernama argument object
+	- Ini adalah fitur dimana kita bisa mengambil semua parameter dalam bentuk array dengan menggunakan object bernama arguments
+	- Arguments secara otomatis bisa digunakan di functions
+	- Namun perlu diingat, bahwa untuk JS saat ini, lebih baik disarankan mengunakan rest parameteer dibanding arguments object 
+
+
+FUNCTION SEBAGAI VALUE
+	- Function tidak hanya bisa digunakan kode program yang dieksekusi, tapi bisa juga sebagai value
+	- Artinya, function bisa disimpan di variable, bisa juga dikirim melalui parameter ke function laininya.
+
+
+ANONYMOUS FUNCTION
+	- Sebelumnya kita selalu membuat function dengan nama
+	- Kita juga bisa membuat function tanpa nama functionn, atau istilahnya adalah anonymous function
+	- Kita bisa membuat anonymous function dalam sebuah variable atau bisa juga kita buat ketika mengisi parameter
+
+
+FUNCTION DALAM FUNCTION(nested function)
+	- Tidak ada batasan dimana kita bisa membuat function
+	- Termasuk jika kita ingin membuat function di dalam sebuah function, kita bisa melakukannya
+	- Function yang terdapat didalam, kita sebut inner function
+	- Inner function hanya bisa diakses di tempat kita membuat functionnya, tidak bisa diakses dari luar functionnya
+
+
+SCOPE 
+	- Scope merupakan area akses sebuah data
+	- Ada dua jenis scope, global scope dan local scope
+	- Seiap kita membuat function, maka kita akan membuat locall scope untuk function tersebut
+	- Data di global scope bisa diakses dari local scope, namun data di local scope hanya bisa di akses di local scope tersebut atau di scope local dibawahnya (dalam kasus function dalam function)
+
+
+RECURSIVE FUNCTION
+	- Adalah kemampuan function memanggil function dirinya sendirinya
+	- Kadang memeang ada banyak problem, yang lebih mudah diselesaikan menggunakan recursive function, seperti contohnya kasus factorial

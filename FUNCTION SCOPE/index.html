@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functionn Scope</title>
+  </head>
+  <body>
+    <script>
+      //global scope
+      let counter = 0;
+
+      function hitMe() {
+        counter++;
+      }
+      hitMe();
+      hitMe();
+      hitMe();
+      hitMe();
+      hitMe();
+
+      document.writeln(`<p>${counter}</p>`);
+
+      //local scope
+      function first() {
+        //local scopenya first
+        let firstVariable = "First";
+        document.writeln(`<p>${firstVariable}</p>`);
+      }
+
+      function second() {
+        //local scopenya second
+        let secondVariable = "Second";
+        document.writeln(`<p>${secondVariable}</p>`);
+      }
+
+      first();
+      second();
+
+      //akses global scope
+      //   document.writeln(`<p>${firstVariable}</p>`); //error
+      //   document.writeln(`<p>${secondVariable}</p>`); //error
+
+      //Nested Function Scope
+      function firstNested() {
+        let firstVariable2 = "First2";
+
+        function second() {
+          document.writeln(`<p>${firstVariable2}</p>`);
+        }
+        second();
+        // firstNested();
+      }
+
+      firstNested();
+      second();
+    </script>
+  </body>
+</html>
