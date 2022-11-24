@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getter dan setter</title>
+  </head>
+  <body>
+    <script>
+      //kode getter
+      const person = {
+        firstName: "Ekoju",
+        lastName: "Oura",
+        get fullName() {
+          return `${this.firstName} ${this.lastName}`;
+        },
+        //kode setter
+        set fullName(val) {
+          const array = val.split(" "); //split untuk memisah menggunakan sepasi
+          this.firstName = array[0];
+          this.lastName = array[1];
+        },
+      };
+
+      person.fullName = "Budi Plawad";
+      console.table(person);
+      person.fullName = "Azis Plawad";
+      console.table(person);
+      person.fullName = "Gilang Pasir";
+      console.table(person);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring</title>
+  </head>
+  <body>
+    <script>
+      // Mengambil data di array
+      const names = ["Eko", "kurniawan", "Khannedy"];
+      const firstName = names[0];
+      const middleName = names[1];
+      const lastName = names[2];
+
+      console.info(firstName);
+      console.info(middleName);
+      console.info(lastName);
+
+      // Mengambil data menggunakan Destructuring array
+      const namesDest = ["Eko", "Kurniawan", "Khannedy", "Budi", "joko"];
+
+      const [firstNameDest, middleNameDest, lastNameDest, ...outher] = namesDest;
+
+      console.info(firstNameDest);
+      console.info(middleNameDest);
+      console.info(lastNameDest);
+      console.info(outher); //mengakese data yang lainnya
+
+      // Mengambil data di object
+      const person = {
+        firstNameObj: "Ekoju",
+        lastNameObj: "KhannedyOject",
+        addres: {
+          street: "Jalan Belum Ada",
+          city: "Kajartah",
+          country: "Indonesia",
+        },
+        hobby: "Game",
+        channel: "Programmer Zaman Now",
+      };
+
+      //mengakese desctucturing nested object
+      let {
+        firstNameObj,
+        lastNameObj,
+        addres: { country, city, street },
+        ...outherobj
+      } = person;
+      console.info(firstNameObj);
+      console.info(lastNameObj);
+      console.info(country);
+      console.info(city);
+      console.info(street);
+      console.info(outherobj);
+
+      //akses menggunakan destucturing pada object
+      //   let { firstNameObj, lastNameObj, addres, ...outherobj } = person;
+      //   console.info(firstNameObj);
+      //   console.info(lastNameObj);
+      //   console.info(addres);
+      //   console.info(outherobj);
+
+      // akses data di objek
+      //   const firstNameObj = person.firstNameObj;
+      //   const lastNameObj = person.firstNameObj;
+
+      {
+        //Destructuring di function parameter
+        function displayPerson({ firstName, middleName, lastName }) {
+          console.info(firstName);
+          console.info(middleName);
+          console.info(lastName);
+        }
+
+        const person2 = {
+          firstName: "Ekoju",
+          middleName: "Oura",
+          lastName: "Nolimmit",
+        };
+        displayPerson(person2);
+      }
+
+      {
+        // Destructuring di function parameter array
+        function sum([first, second]) {
+          return first + second;
+        }
+
+        console.info(sum([10, 10]));
+        console.info(sum([20, 10]));
+      }
+
+      {
+        //Default value destructuring array
+        const names = ["Ekoju", "Oura"];
+        const [firstName, middleName, lastName = "defaultValue"] = names;
+
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+      }
+
+      {
+        // Default value di object
+        const person = {
+          firstName: "Eko",
+          lastName: "Khannedy",
+        };
+        const { firstName, middleName = "DefaultValue", lastName } = person;
+
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+      }
+
+      {
+        //Menggunakan Nama Variable lain
+        const person = {
+          firstName: "Eko",
+          lastName: "Khannedy",
+        };
+        const { firstName: namaDepan, middleName: namaTengah = "Kurniawan", lastName: namaBelakang } = person;
+
+        console.info(namaDepan);
+        console.info(namaTengah);
+        console.info(namaBelakang);
+      }
+    </script>
+  </body>
+</html>
